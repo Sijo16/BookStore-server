@@ -5,7 +5,7 @@ import { get } from 'mongoose';
 const router = express.Router();
 
 //get details fo all book
-router.get("/books",async(req,res)=>{
+router.get("/",async(req,res)=>{
 
     try {
        const book = await Book.find({})
